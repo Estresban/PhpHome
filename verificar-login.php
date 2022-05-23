@@ -15,8 +15,8 @@ if(isset($_POST['boton-inicio-confirmar'])){
 		$_SESSION['usuario']=$registro['usuario'];
 		$_SESSION['email']=$registro['email'];
 		$fecha = Date("Y-m-d H:i:s");
-		$file = fopen("html/txt/idUsuario.txt", "a+");
-		fwrite($file,"Inicio sesion.-".$_SESSION['usuario-logueado'] .'/     ID.-'.$_SESSION['id-usuario-logueado'].'/    el dia y a la hora'. $fecha."/n/r" );
+		$file = fopen("html/txt/idUsuario.txt", "a");
+		fwrite($file,"Inicio sesion.-".$registro['alias'] .'/     ID.-'.$registro['id-usuario'].'/    el dia y a la hora'. $fecha);
 		fclose($file);
 		$id_usuario=$_SESSION['id-usuario-logueado'];
 		$comando='logueado';
