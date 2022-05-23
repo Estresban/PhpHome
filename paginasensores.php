@@ -23,7 +23,7 @@ sleep(1);
 		
 
 		<div class="group-wrapper">
-        <FORM><div></div>
+        <form><div></div>
         <table border="0" align="center">
         <tbody>
 	<tr>
@@ -91,7 +91,7 @@ sleep(1);
 	$fecha = Date("Y-m-d H:i:s");
 	$query3 = "INSERT INTO meteo( humedad, indice, temperatura1, temperatura2, altitud, presion, lumenes, fecha) VALUES ('$retorno[0]','$retorno[1]','$retorno[2]','$retorno[3]','$retorno[4]','$retorno[6]','$retorno[5]','$fecha')";
 	$mysqli->query($query3);
- $query5 = "INSERT INTO retornos(est0, est1, est2, est3, est4, est5, est6, est7, est8, est9, est10, est11, est12, est13, est14, est15, fecha) VALUES ('$estado[0]','$estado[1]','$estado[2]','$estado[3]','$estado[4]','$estado[5]','$estado[6]','$estado[7]','$estado[8]','$estado[9]','$estado[10]','$estado[11]','$estado[12]','$estado[13]','$estado[14]','$estado[15]','$fecha')";
+ $query5 = "INSERT INTO retornos(escalera, salon, pasillo, cocina, patio, matrimonio, hab1, hab2, hab3, garaje, motorpuerta, persiana1, persiana2, aire_acond, calefaccion, alarma, fecha) VALUES ('$estado[0]','$estado[1]','$estado[2]','$estado[3]','$estado[4]','$estado[5]','$estado[6]','$estado[7]','$estado[8]','$estado[9]','$estado[10]','$estado[11]','$estado[12]','$estado[13]','$estado[14]','$estado[15]','$fecha')";
 	$mysqli->query($query5);
  $query6 = "INSERT INTO estadosp1(humedad, indice, temp1, temp2, altitud, lumenes, presion, estados, fecha) VALUES ('$retorno[0]','$retorno[1]','$retorno[2]','$retorno[3]','$retorno[4]','$retorno[5]','$retorno[6]','$retorno[7]','$fecha')";
 	$mysqli->query($query6);
