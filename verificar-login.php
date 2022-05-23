@@ -20,7 +20,8 @@ if(isset($_POST['boton-inicio-confirmar'])){
 		fclose($file);
 		$id_usuario=$_SESSION['id-usuario-logueado'];
 		$comando='logueado';
-		$query2 = "INSERT INTO historial(id_usuario, id_comando, comando, fecha, otros) VALUES ('$id_usuario',1,'$comando','$fecha',NULL)";
+		$id_comando='1';
+		$query2 = "INSERT INTO historial(id_usuario, id_comando, comando, fecha, otros) VALUES ('$id_usuario',$id_comando,'$comando','$fecha',NULL)";
 		$mysqli->query($query2);
 				header("Location: ./paginaindice.php");
 	}	
