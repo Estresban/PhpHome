@@ -58,25 +58,24 @@ CREATE TABLE `raspi`.`estadosp1` (
 `presion` int NOT NULL,
 `estados` int NOT NULL,
 `fecha` DATETIME NOT NULL PRIMARY KEY) ENGINE = InnoDB;
-
-
+ 
 CREATE TABLE `raspi`.`retornos` (  
-`est0` int NOT NULL , 
-`est1` int NOT NULL , 
-`est2` int NOT NULL ,
-`est3` int NOT NULL , 
-`est4` int NOT NULL , 
-`est5` int NOT NULL ,
-`est6` int NOT NULL ,
-`est7` int NOT NULL ,
-`est8` int NOT NULL , 
-`est9` int NOT NULL , 
-`est10` int NOT NULL ,
-`est11` int NOT NULL , 
-`est12` int NOT NULL , 
-`est13` int NOT NULL ,
-`est14` int NOT NULL ,
-`est15` int NOT NULL ,
+`escalera` int NOT NULL , 
+`salon` int NOT NULL , 
+`pasillo` int NOT NULL ,
+`cocina` int NOT NULL , 
+`patio` int NOT NULL , 
+`matrimonio` int NOT NULL ,
+`hab1` int NOT NULL ,
+`hab2` int NOT NULL ,
+`hab3` int NOT NULL , 
+`garaje` int NOT NULL , 
+`motorpuerta` int NOT NULL ,
+`persiana1` int NOT NULL , 
+`persiana2` int NOT NULL , 
+`aire_acond` int NOT NULL ,
+`calefaccion` int NOT NULL ,
+`alarma` int NOT NULL ,
 `fecha` DATETIME NOT NULL PRIMARY KEY) ENGINE = InnoDB;
 
 
